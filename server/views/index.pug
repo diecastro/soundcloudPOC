@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='version' content=applicationVersion)
+    title='Sign up for Payanywhere'
+    script.
+      const serverBaseUrl = window.location.protocol + "//" + window.location.host + "/api/";
+      const serverDomainUrl = window.location.protocol + "//" + window.location.host + "/";
+      const productionEnvironment = !{productionEnvironment};
+    meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1')
+    link(href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Raleway:600,800&subset=latin-ext' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,500' rel='stylesheet')
+    link(rel='stylesheet' href=css)
+    link(rel='shortcut icon' href='./images/favicon.ico')
+  body
+    div(id='app')
+    script(src=js)

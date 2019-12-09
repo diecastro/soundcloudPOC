@@ -1,0 +1,34 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+.nyc_output
+
+# Ignore built JS and CSS
+client/dist/bundle.js
+client/dist/bundle.css
+client/dist/bundle.js.map
+client/dist/bundle.css.map
+
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Sass
+.sass-cache/
+*.css.map
+
+# Dependency directory
+node_modules
+
+# Ignore IDE Files
+.idea
+
+server/log/
+
+client/dist/hot
+*.hot-update.js
+*.hot-update.json
+manifest.json
+shop-version.json
+.env

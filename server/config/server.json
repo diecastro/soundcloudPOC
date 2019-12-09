@@ -1,0 +1,19 @@
+{
+  "payloadLimit": "10mb",
+  "host": "localhost",
+  "port": 3002,
+  "name": "Soundcloud Site",
+  "responseType": "application/json",
+  "contentType": "content-type",
+  "jwtPortal": 30,
+  "protocol": "http:",
+  "requireAuth": true,
+  "apiHostname": "127.0.0.1",
+  "apiPort": "3600",
+  "apiProtocol": "http:",
+  "jsonType": "application/json"
+}
+
+
+
+
