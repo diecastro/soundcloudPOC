@@ -1,0 +1,63 @@
+body {
+  display: block;
+  margin: 0;
+  font-family: $primaryFontFamily;
+}
+
+.header {
+  width: 100%;
+  font: 100 14px/1.5 Interstate, Lucida Grande, Arial, sans-serif;
+  background: #333;
+  height: 46px;
+  transition: height .2s ease-in-out;
+
+
+  &__logo {
+    background: #f50;
+    background: linear-gradient(#f70, #f30);
+    height: 45px;
+    width: 70px;
+    margin-left: 18px;
+
+    span {
+      background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAWCAQAAAAs/tcnAAABMUlEQVR4Ac3UJfQUARTGUaxnrBHpPeDu7u7uTg/QO/SK9q1U3KHg2i7fH4exNeSdc9/ZNL/RHfRfjdHOuOajt246b7Fh/T38WO/9OnfM7s+hx3gUh5XNWYN7D4wnTlOe6OGsv/6eQlQFmNX9WScTs4jqwD3DOr/j04gJxHyiOsCiTgITibnEdGIJURc410lgJrGYmE+sIuoCz1301BstGwxueqQLiVXEMmI9cVp7c9WIYmAqkUysIjYQa4mtRAJtJwb//kgXEdOJTcR2Yiuxi2g/wIYfgTnEBmIFsYvYS+whDhCdBFo/ApuJvcRO4hBxhDhMHCU6Cbz5EThKHCe+7BNEcXceKFxB/e7yFs0h1hP1u/OHXHiL6nfnr2nhO6jfR3r50L5cR9O+oX5+/FX8vfkElmh0Xu+KRLEAAAAASUVORK5CYII=) no-repeat 12px 11px;
+      display: block;
+      height: 100%;
+    }
+  }
+}
+
+.wrapper {
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.inputLabel {
+  font-family: $primaryFontFamily;
+  font-weight: 450;
+  color: black;
+  padding-left: 20px;
+  margin-bottom: -10px;
+}
+
+.artistForm {
+  width: 50%;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexColumn {
+  display: flex;
+  justify-content: center;
+}
+
+.bigAvatar {
+  width: 60px;
+  height: 60px;
+}
+
+@import 'artist';

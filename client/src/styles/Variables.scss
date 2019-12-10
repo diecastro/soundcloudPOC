@@ -1,0 +1,103 @@
+$backgroundColor: #FFFFFF;
+$payAnywhereColor: #F57F38;
+$payAnywhereGradient: linear-gradient(to top right, #f5af19, #f12711);
+$blackColor: #1C1E22;
+$primaryColor: #434447;
+$secondaryColor: #67696d;
+$tertiaryColor: #c2c3c3;
+$btBackgroundColor: #625E5B;
+$lineColor: #DDDDDD;
+$stepper: #E5E5E7;
+$wrapperColor: #f2f2f4;
+$dialogSecondBoxTextColor: #C1C1C4;
+$dialogSecondBoxbackgroundColor: #F3F3F3;
+$dialogThirdBoxbackgroundColor: #E4E4E4;
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+$primaryFontFamily: "Gotham", Helvetica, Arial, sans-serif;
+$secondaryFontFamily: "Raleway", sans-serif;
+$tertiaryFontFamily: "Roboto", sans-serif;
+$quaternaryFontFamily: "Work Sans", sans-serif;
+$navFontFamily: 'Montserrat', sans-serif;
+$containerSize: 1250px;
+
+%secondaryFontFamilySemiBold {
+  font-family: $secondaryFontFamily !important;
+  font-weight: 600 !important;
+}
+
+%secondaryFontFamilyExtraBold {
+  font-family: $secondaryFontFamily !important;
+  font-weight: 800 !important;
+}
+
+%tertiaryFontFamilyRegular {
+  font-family: $tertiaryFontFamily !important;
+  font-weight: 400 !important;
+}
+
+%heading1 {
+  @extend %secondaryFontFamilyExtraBold;
+  font-size: 30px !important;
+}
+
+%heading2 {
+  @extend %secondaryFontFamilySemiBold;
+  font-size: 13.5px !important;
+  text-transform: uppercase;
+}
+
+%heading3 {
+  @extend %secondaryFontFamilySemiBold;
+  font-size: 11px !important;
+  text-transform: uppercase;
+}
+
+%body {
+  @extend %tertiaryFontFamilyRegular;
+  font-size: 17px !important;
+}
+
+%body3 {
+  @extend %tertiaryFontFamilyRegular;
+  font-size: 14px !important;
+}
+
+%customLine {
+  border-bottom: solid 1px $lineColor;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+%link {
+  text-decoration: none;
+  color: $payAnywhereColor;
+  font-family: $secondaryFontFamily;
+  cursor: pointer;
+}
+
+%flip {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: 'FlipH';
+}
+
+%headerTextMedium {
+  @extend %secondaryFontFamilyExtraBold;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+%detailsHeader {
+  @extend %heading3;
+  color: $secondaryColor;
+}
+
+%detailsLabel {
+  @extend %heading3;
+  transform: translate(0px, -28px) !important;
+}

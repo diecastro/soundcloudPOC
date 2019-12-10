@@ -6,7 +6,7 @@ const express = require('express'),
   router = express.Router(),
   path = require('path');
 
-const staticDir = path.resolve(__dirname, '../../../client/dist');
+const staticDir = path.resolve(__dirname, '../../client/dist');
 
 router.use(express.static(staticDir));
 

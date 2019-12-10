@@ -6,19 +6,9 @@ export function getUser(user) {
   return {
     [CALL_API]: {
       endpoint: endpoint,
-      method: 'GET',
-      types: [actionTypes.getUserRequest, actionTypes.getUserSuccess, actionTypes.getUserFailure]
-    }
-  };
-}
-
-export function getSongs(userId) {
-  const endpoint = 'getSongs';
-  return {
-    [CALL_API]: {
-      endpoint: endpoint,
-      method: 'GET',
-      types: [actionTypes.getSongsRequest, actionTypes.getSongsSuccess, actionTypes.getSongsFailure]
+      method: 'POST',
+      types: [actionTypes.getUserRequest, actionTypes.getUserSuccess, actionTypes.getUserFailure],
+      body: user
     }
   };
 }

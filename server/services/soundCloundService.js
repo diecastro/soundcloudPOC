@@ -2,8 +2,10 @@
 const requestHelper = require('./helpers/requestHelper');
 
 
-module.exports.getUserId = (user) => {
-  return requestHelper.get('/users/anthonyattalla');
+module.exports.getUserId = async (user) => {
+  const artistInfo = await requestHelper.get(`/users/${user.user}`);
+  const songs = await requestHelper.get(`/users/${artistInfo.id}/tracks`);
+  return {artistInfo, songs};
 };
 
 module.exports.getSongs = (userId) => {

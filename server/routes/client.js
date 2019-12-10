@@ -1,7 +1,7 @@
 'use strict';
 
-const config = require('./../../config/app'),
-  applicationVersion = require('../../../../package.json');
+const config = require('../config/app'),
+  applicationVersion = require('../../package');
 
 module.exports.index = (request, response) => {
 

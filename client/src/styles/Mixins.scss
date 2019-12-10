@@ -1,0 +1,120 @@
+@mixin phone {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin phoneLandscape {
+  @media (max-width: #{$tablet-width - 1px}) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin notDesktop {
+  @media (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin font-size($sizeValue) {
+  font-size: ($sizeValue) + px;
+  font-size: $sizeValue/16 + rem;
+}
+
+@mixin closeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $payAnywhereColor;
+  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+  0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+  0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+  z-index: 100;
+  @include phone {
+    right: 0;
+  }
+}
+
+// Order Summary
+
+@mixin smallParagraph {
+  font-weight: 400;
+  margin: 0;
+  font-size: 6pt;
+}
+
+@mixin smallIcon {
+  width: 20px;
+  height: auto;
+}
+
+@mixin smallContainer {
+  width: 80%;
+  height: 20px;
+  background-color: $wrapperColor;
+  display: flex;
+  justify-content: space-between;
+  padding: 23px;
+  margin-bottom: 5px;
+}
+
+@mixin productWrapper {
+  margin-left: -10px;
+  height: 20px;
+  width: 100%;
+  padding: 0;
+  padding-bottom: inherit;
+}
+
+@mixin detailsWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+@mixin textWrapper {
+  display: inline-flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 15px;
+  font-size: 8pt;
+}
+
+@mixin priceWrapper {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin costChildren {
+  display: inline-flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  margin: -10px;
+  height: 10px;
+}
